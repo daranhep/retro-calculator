@@ -36,7 +36,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pZH-dL-ddx">
-                                <rect key="frame" x="134" y="144" width="332" height="434"/>
+                                <rect key="frame" x="134" y="82" width="332" height="434"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="HTa-hm-cye">
                                         <rect key="frame" x="46" y="0.0" width="240" height="70"/>
@@ -55,7 +55,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Az2-hH-2Tc">
-                                <rect key="frame" x="193" y="225" width="213" height="343"/>
+                                <rect key="frame" x="193" y="161" width="213" height="343"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="t0X-gv-aiX">
                                         <rect key="frame" x="0.0" y="0.0" width="213" height="63"/>
@@ -247,7 +247,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mL-Oz-vCA">
-                                <rect key="frame" x="210" y="165" width="200" height="40"/>
+                                <rect key="frame" x="210" y="108" width="200" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="DDn-ch-lcd"/>
                                     <constraint firstAttribute="height" constant="40" id="Kgz-i4-gHt"/>
@@ -255,6 +255,22 @@
                                 <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="30"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xwd-Nc-xbM">
+                                <rect key="frame" x="262" y="524" width="75" height="25"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBQ-Fu-nAf">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="Uwf-Mf-sCK"/>
+                                            <constraint firstAttribute="width" constant="75" id="Yne-Y9-oYx"/>
+                                        </constraints>
+                                        <state key="normal" image="clear"/>
+                                        <connections>
+                                            <action selector="onClearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wUc-js-zwN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -262,7 +278,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ic3-WI-uPG" secondAttribute="bottom" id="9RD-6y-jRq"/>
                             <constraint firstItem="pZH-dL-ddx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BMh-Jb-TlL"/>
                             <constraint firstItem="4Vd-gp-wZB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EJW-xY-lfJ"/>
+                            <constraint firstItem="Xwd-Nc-xbM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J1a-hc-j1g"/>
                             <constraint firstItem="pZH-dL-ddx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MsD-Si-3la"/>
+                            <constraint firstItem="Xwd-Nc-xbM" firstAttribute="top" secondItem="pZH-dL-ddx" secondAttribute="bottom" constant="8" id="NOJ-0g-R4Q"/>
                             <constraint firstAttribute="trailing" secondItem="Ic3-WI-uPG" secondAttribute="trailing" id="R1a-m6-L4N"/>
                             <constraint firstItem="4Vd-gp-wZB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="doj-cB-sr3"/>
                             <constraint firstItem="3mL-Oz-vCA" firstAttribute="top" secondItem="pZH-dL-ddx" secondAttribute="top" constant="25" id="e8E-mF-C2U"/>
@@ -279,7 +297,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="71" y="423"/>
+            <point key="canvasLocation" x="-168" y="421"/>
         </scene>
     </scenes>
     <resources>
@@ -295,6 +313,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
